@@ -50,3 +50,5 @@ FString 类型的变量，在UE_LOG中使用时，需要解引用符 * 。
  
 https://docs.unrealengine.com/5.2/en-US/string-handling-in-unreal-engine/
  
+ https://blog.csdn.net/m0_51819222/article/details/122516259?ops_request_misc=&request_id=&biz_id=102&utm_term=ue%20FText&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-3-122516259.142^v87^insert_down28v1,239^v2^insert_chatgpt&spm=1018.2226.3001.4187
+ 
