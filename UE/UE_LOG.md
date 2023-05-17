@@ -44,3 +44,9 @@ UE_LOG(LogTemp, Warning, TEXT("Your String: &s"), *Str);
 
 注意事项
 FString 类型的变量，在UE_LOG中使用时，需要解引用符 * 。
+ 
+ ![image](https://github.com/yingran-cn/NoteBook/assets/26194916/b3c6dd06-378f-4517-ae1d-2759463b638d)
+
+ 
+https://docs.unrealengine.com/5.2/en-US/string-handling-in-unreal-engine/
+ 
