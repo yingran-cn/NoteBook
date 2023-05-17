@@ -1,3 +1,5 @@
+## AddOnScreenDebugMessage
+GEngine->AddOnScreenDebugMessage(-1, 5, FColor::Red, loc.ToString());
 ## UE_LOG
 
 TEXT(string)
