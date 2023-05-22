@@ -41,6 +41,20 @@ FString Str = FString::Format(TEXT("Name: {0}, Age: {1}")，args);
  
 UE_LOG(LogTemp, Warning, TEXT("Your String: &s"), *Str);
 用法目前本人主要用到同Printf一样 
+ 
+ 
+ GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("MyobjectName : %s"), *MyObject->GetName()));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red,FString::Printf(TEXT("CharactreID : %d"), MyObject->GameDataBase.CharacterID));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Character : %s"), *MyObject->GameDataBase.Character));
+		UMyGameInstance* MyGameInstancePtr = UMyGameInstance::GetMyInstance();
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("GameInstance : %s"), *MyGameInstancePtr->GetName()));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("GameInstanceId : %d"), MyGameInstancePtr->Number));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("GameInstanceId : %f"), MyGameInstancePtr->CurrentHealth));
+
+————————————————
+版权声明：本文为CSDN博主「飞起的猪」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_43021038/article/details/125799203
+ 
 
 注意事项
 FString 类型的变量，在UE_LOG中使用时，需要解引用符 * 。
